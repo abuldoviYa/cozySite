@@ -140,7 +140,7 @@ html,body{height: 100%;}
         2. Top-area
 --------------------------------------*/
 nav.navbar.bootsnav {
-    background-color: transparent;
+    background-color: #fff;
     border-bottom: transparent;
 }
 .wrap-sticky nav.navbar.bootsnav.sticked {background-color: #fff;box-shadow: 0 2px 5px rgba(0,0,0,.2);}
@@ -581,7 +581,7 @@ ul.cart-list > li.total {
 /*-------------------------------------
         5. New-arrivals 
 --------------------------------------*/
-.new-arrivals {padding:85px 0 70px; background: #ececec;}
+.new-arrivals {padding:85px 0 70px; background: #f8f9fc;}
 .new-arrivals-content{margin-top: 80px; }
 
 .button_arrival {text-align: center;}
@@ -880,7 +880,7 @@ span.feature-review {margin-left: 10px;}
 }
 
 .clients {
-    background: #f8f9fd;
+
     display: flex;
     align-items: center;
     /* height: 220px; */
