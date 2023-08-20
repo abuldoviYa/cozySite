@@ -28,9 +28,12 @@ font-family: 'Roboto', sans-serif;
     --main-color-yellow: #ffe7bd;
     --main-color-yellow-light: #fffbf4;
     /* --main-color-orange: #FF8B5C; */
-    --main-color-orange: #ffbc49;
+    --main-color-orange: #d09839;
+    --main-color-orange-light: #f7d08e;
     --main-color-pink: #FFB4A4;
     --main-color-red: #C1564C;
+
+    --main-color-grey:  #ffe7bd
   }
 
 *{
@@ -55,6 +58,12 @@ body{
     margin:0 auto;
 	overflow-x:hidden;
 }
+
+hr {
+    height: 1px;
+    background: #e0e0df;
+}
+
 .container {
     width: 90%;
 }
@@ -118,6 +127,12 @@ html,body{height: 100%;}
 }
 .section-header h2 span{text-transform: lowercase;}
 /* section-header */
+
+#also {
+    margin-bottom: 50px;
+}
+
+
 
 /*=============Style css=========*/
 
@@ -476,7 +491,8 @@ ul.cart-list > li.total {
 /*-------------------------------------
         4. Populer-post
 --------------------------------------*/
-.populer-products{padding:100px 0 0;}
+.populer-products{padding:100px 0 30px;}
+
 .single-populer-products{
     position: relative;
     min-height:280px;
@@ -498,6 +514,7 @@ ul.cart-list > li.total {
     -ms-transition: 0.3s linear; 
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
+    text-transform: uppercase;
 }
 .single-populer-products:hover h2 a{color: var(--main-color-orange);}
 .single-populer-products-para {
@@ -548,11 +565,26 @@ ul.cart-list > li.total {
     border: 1px solid #5f5b57;
 }
 
+.card span {
+    font-weight: 600;
+    font-style: italic;
+}
+.card .list-group .list-group-item {
+    margin-top: 15px;
+    color: white;
+    border-radius: 10px;
+    background-color: var(--main-color-orange);
+    padding: 20px;
+    font-size: 2rem;
+}
+
 /*-------------------------------------
         5. New-arrivals 
 --------------------------------------*/
-.new-arrivals {padding:85px 0 70px;}
-.new-arrivals-content{margin-top: 80px;}
+.new-arrivals {padding:85px 0 70px; background: #ececec;}
+.new-arrivals-content{margin-top: 80px; }
+
+.button_arrival {text-align: center;}
 
 .single-new-arrival{margin-bottom: 50px;text-align: center;}
 .single-new-arrival-bg {
@@ -563,6 +595,7 @@ ul.cart-list > li.total {
     align-items: center;
     justify-content:center;
     overflow:hidden;
+    border-radius: 50px;
 }
 .single-new-arrival-bg img{
     width:auto;
@@ -680,8 +713,8 @@ p.arrival-review span {margin-right: 15px;}
     background-position: center;
     background-size: cover;
 }
-.sofa-collection.collectionbg1{background: url(../images/collection/sofa-collection-banner.jpg)no-repeat;}
-.sofa-collection.collectionbg2{background: url(../images/collection/table-banner.jpg)no-repeat;}
+.sofa-collection.collectionbg1{background: url(../images/collection/banquet2.png)no-repeat;}
+.sofa-collection.collectionbg2{background: url(../images/collection/banquet.jpg)no-repeat;}
 
 .sofa-collection:before,.sofa-collection:after {
     position: absolute;
@@ -719,6 +752,7 @@ p.arrival-review span {margin-right: 15px;}
     color: #fff;
     font-weight: 500;
     margin: 25px 0 10px;
+    max-width: 60%;
 }
 .sofa-collection-price { margin-bottom: 3px;}
 
@@ -727,7 +761,7 @@ p.arrival-review span {margin-right: 15px;}
 /*-------------------------------------
         7. Features
 --------------------------------------*/
-.feature {padding:110px 0 0px;}
+.feature {padding:60px 0 ;}
 
 .feature-content,.blog-content,.linens-content{margin-top: 75px;}
 .single-feature,.single-blog, .single-linens {margin-bottom:30px;}
@@ -748,6 +782,10 @@ span.feature-review {margin-left: 10px;}
 .single-feature-txt h5 {
     color:  #5f5b57;
     font-weight:  400;
+}
+.single-feature img{
+    width: 100%;
+    height: 80%;
 }
 /*.single-feature-txt */
 
@@ -833,17 +871,26 @@ span.feature-review {margin-left: 10px;}
 /*-------------------------------------
         9. Clients
 --------------------------------------*/
+#clients .owl-carousel {
+    z-index: 0;
+}
+
+#clients {
+    margin: 50px 0;
+}
+
 .clients {
     background: #f8f9fd;
     display: flex;
     align-items: center;
-    height: 220px;
+    /* height: 220px; */
+
 }
-.clients .item {text-align: center;}
+.clients .item {text-align: center; z-index: -9;}
 /*-------------------------------------
         10. News-letter
 --------------------------------------*/
-.newsletter{padding:120px 0 75px;}
+.newsletter{padding:30px 0 0px;}
 
 .hm-footer-widget{margin-bottom: 30px;}
 .hm-foot-title h4 {
@@ -925,12 +972,13 @@ span.feature-review {margin-left: 10px;}
 }
 .footer-social a i {
     color: #a4aaaf;
-    margin: 0 18px 24px 0;
+    margin: 20px;
     -webkit-transition: .3s; 
     -moz-transition:.3s; 
     -ms-transition:.3s; 
     -o-transition:.3s;
     transition: .3s;
+    font-size: 30px;
 }
 .footer-social i:hover{color: var(--main-color-orange);}
 
@@ -1043,7 +1091,7 @@ span.feature-review {margin-left: 10px;}
 }
 .bed-collection-price { margin-bottom: 3px;}
 
-.btn-cart.welcome-add-cart.bed-collection-btn{height: 50px;line-height: 50px;}
+.btn-cart.welcome-add-cart.bed-collection-btn{height: 50px;line-height: 50px; z-index: 1000;}
 
 
 /*-------------------------------------       
@@ -1091,7 +1139,7 @@ span.feature-review {margin-left: 10px;}
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0,.3);
+    /* background: rgba(0,0,0,.3); */
     -webkit-transform:scale(0);
     -moz-transform:scale(0);
     -ms-transform:scale(0);
